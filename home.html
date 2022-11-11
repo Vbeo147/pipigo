@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="status-bar" class="flex flex-row select-none">
-      <div class="flex flex-row justify-start items-center container p-4">
+    <div id="status-bar" class="flex flex-row select-none p-4">
+      <div class="flex flex-row justify-start items-center container">
         <div class="flex flex-row items-center mr-8">
           <img class="w-11 mr-1" src="img/logo.png" alt="" />
           <h1 class="text-3xl font-bold tracking-wide text-gray-600">pipigo</h1>
@@ -27,20 +27,36 @@
             >
             <span>문서 번역</span>
           </li>
-          <li class="mr-7 cursor-pointer relative">
+          <li class="mr-5 cursor-pointer relative">
             <span
               class="absolute bg-red-400 rounded-full w-1.5 h-1.5 left-10 bottom-5"
               >ㅤ</span
             >
             <span>GYM</span>
           </li>
+          <li class="flex justify-center items-center">
+            <span
+              class="border border-l-black h-5 block mr-4 opacity-20"
+            ></span>
+          </li>
           <li class="mr-7 cursor-pointer"><span>사전</span></li>
         </ul>
       </div>
-      <div class="flex flex-row justify-end container">
-        <!-- image tags -->
-        <button>로그인</button>
-      </div>
+      <ul class="flex flex-row justify-end container items-center">
+        <li class="text-2xl mr-6 cursor-pointer">
+          <i class="far fa-share-square"></i>
+        </li>
+        <li class="text-2xl mr-6 cursor-pointer">
+          <i class="far fa-star"></i>
+        </li>
+        <li class="text-2xl mr-6 cursor-pointer">
+          <i class="fas fa-sliders-h"></i>
+        </li>
+        <li class="mr-6 text-sm border border-gray-300 py-0.5 px-1">
+          <button>로그인</button>
+        </li>
+        <li class="text-2xl mr-6 opacity-50"><i class="fas fa-th"></i></li>
+      </ul>
     </div>
   </body>
 </html>
