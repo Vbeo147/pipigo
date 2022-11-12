@@ -12,53 +12,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="status-bar" class="flex flex-row select-none p-4">
-      <div class="flex flex-row justify-start items-center container">
-        <div class="flex flex-row items-center mr-8">
-          <img class="w-11 mr-1" src="img/logo.png" alt="" />
-          <h1 class="text-3xl font-bold tracking-wide text-gray-600">pipigo</h1>
+    <div>
+      <div id="status-bar" class="flex flex-row select-none p-4">
+        <div class="flex flex-row justify-start items-center container">
+          <div class="flex flex-row items-center mr-8">
+            <img class="w-11 mr-1" src="img/logo.png" alt="" />
+            <h1 class="text-3xl font-bold tracking-wide text-gray-600">
+              pipigo
+            </h1>
+          </div>
+          <ul class="flex flex-row text-lg font-semibold tracking-tighter">
+            <li class="mr-7 cursor-pointer"><span>웹사이트 번역</span></li>
+            <li class="mr-7 cursor-pointer relative">
+              <span
+                class="absolute bottom-6 left-14 text-xs text-white italic bg-slate-300 bg-auto rounded-3xl px-1.5 select-none"
+                >Beta</span
+              >
+              <span>문서 번역</span>
+            </li>
+            <li class="mr-5 cursor-pointer relative">
+              <span
+                class="absolute bg-red-400 rounded-full w-1.5 h-1.5 left-10 bottom-5"
+                >ㅤ</span
+              >
+              <span>GYM</span>
+            </li>
+            <li class="flex justify-center items-center">
+              <span
+                class="border border-l-black h-5 block mr-4 opacity-20"
+              ></span>
+            </li>
+            <li class="mr-7 cursor-pointer"><span>사전</span></li>
+          </ul>
         </div>
-        <ul class="flex flex-row text-lg font-semibold tracking-tighter">
-          <li class="mr-7 cursor-pointer"><span>웹사이트 번역</span></li>
-          <li class="mr-7 cursor-pointer relative">
-            <span
-              class="absolute bottom-6 left-14 text-xs text-white italic bg-slate-300 bg-auto rounded-3xl px-1.5 select-none"
-              >Beta</span
-            >
-            <span>문서 번역</span>
+        <ul class="flex flex-row justify-end container items-center">
+          <li class="text-2xl mr-6 cursor-pointer">
+            <i class="far fa-share-square"></i>
           </li>
-          <li class="mr-5 cursor-pointer relative">
-            <span
-              class="absolute bg-red-400 rounded-full w-1.5 h-1.5 left-10 bottom-5"
-              >ㅤ</span
-            >
-            <span>GYM</span>
+          <li class="text-2xl mr-6 cursor-pointer">
+            <i class="far fa-star"></i>
           </li>
-          <li class="flex justify-center items-center">
-            <span
-              class="border border-l-black h-5 block mr-4 opacity-20"
-            ></span>
+          <li class="text-2xl mr-6 cursor-pointer">
+            <i class="fas fa-sliders-h"></i>
           </li>
-          <li class="mr-7 cursor-pointer"><span>사전</span></li>
+          <li class="mr-6 text-sm border border-gray-300 py-0.5 px-1">
+            <button>로그인</button>
+          </li>
+          <li class="text-2xl mr-6 opacity-50 hover:opacity-70 cursor-pointer">
+            <i class="fas fa-th"></i>
+          </li>
         </ul>
       </div>
-      <ul class="flex flex-row justify-end container items-center">
-        <li class="text-2xl mr-6 cursor-pointer">
-          <i class="far fa-share-square"></i>
-        </li>
-        <li class="text-2xl mr-6 cursor-pointer">
-          <i class="far fa-star"></i>
-        </li>
-        <li class="text-2xl mr-6 cursor-pointer">
-          <i class="fas fa-sliders-h"></i>
-        </li>
-        <li class="mr-6 text-sm border border-gray-300 py-0.5 px-1">
-          <button>로그인</button>
-        </li>
-        <li class="text-2xl mr-6 opacity-50 hover:opacity-70 cursor-pointer">
-          <i class="fas fa-th"></i>
-        </li>
-      </ul>
+      <div
+        id="translation-box"
+        class="mt-20 mx-20 flex flex-row justify-between"
+      >
+        <div
+          class="border border-gray-300 w-1/2 h-80 mr-2 rounded-lg py-3 px-5"
+        >
+          <div>
+            <span>한국어</span>
+            <!-- image tag -->
+          </div>
+          <div>
+            <input type="text" placeholder="번역할 내용을 입력하세요." />
+          </div>
+          <div>
+            <!-- image tags -->
+            <button>번역하기</button>
+          </div>
+        </div>
+        <div class="border border-gray-300 w-1/2 h-80 rounded-lg py-3 px-5">
+          <div>
+            <span>영어</span>
+            <!-- image tag -->
+          </div>
+          <div>
+            <input type="text" />
+          </div>
+          <div>
+            <!-- image tags -->
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
