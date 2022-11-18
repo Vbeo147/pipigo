@@ -5,6 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="p-4 w-full">
+      <!---->
+      <div
+        id="status-bar"
+        class="flex flex-row justify-start items-center container w-2/3 mb-24"
+      >
+        <a href="/home.html" class="flex flex-row items-center mr-8">
+          <img class="w-11 mr-1" src="img/logo.png" alt="" />
+          <h1 class="text-3xl font-bold tracking-wide text-gray-600">pipigo</h1>
+        </a>
+        <ul class="flex flex-row text-lg font-semibold tracking-tighter">
+          <li class="mr-7 cursor-pointer">
+            <a href="/translation.html">웹사이트 번역</a>
+          </li>
+          <li class="mr-7 cursor-pointer relative text-green-500">
+            <span
+              class="absolute bottom-6 left-14 text-xs text-white italic bg-slate-300 bg-auto rounded-3xl px-1.5 select-none"
+              >Beta</span
+            >
+            <a href="/document.html">문서 번역</a>
+          </li>
+          <li class="mr-5 cursor-pointer">
+            <span>GYM</span>
+          </li>
+          <li class="flex justify-center items-center">
+            <span
+              class="border border-l-black h-5 block mr-4 opacity-20"
+            ></span>
+          </li>
+          <li class="mr-7 cursor-pointer"><span>사전</span></li>
+        </ul>
+      </div>
+      <!---->
+    </div>
+  </body>
 </html>
