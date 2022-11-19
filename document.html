@@ -14,34 +14,43 @@
   <body>
     <div class="p-4 w-full">
       <!---->
-      <div
-        id="status-bar"
-        class="flex flex-row justify-start items-center container w-2/3 mb-24"
-      >
-        <a href="/home.html" class="flex flex-row items-center mr-8">
-          <img class="w-11 mr-1" src="img/logo.png" alt="" />
-          <h1 class="text-3xl font-bold tracking-wide text-gray-600">pipigo</h1>
-        </a>
-        <ul class="flex flex-row text-lg font-semibold tracking-tighter">
-          <li class="mr-7 cursor-pointer">
-            <a href="/translation.html">웹사이트 번역</a>
+      <div id="status-bar" class="flex flex-row select-none p-4 w-full mb-24">
+        <div class="flex flex-row justify-start items-center container w-2/3">
+          <a href="/home.html" class="flex flex-row items-center mr-8">
+            <img class="w-11 mr-1" src="img/logo.png" alt="" />
+            <h1 class="text-3xl font-bold tracking-wide text-gray-600">
+              pipigo
+            </h1>
+          </a>
+          <ul class="flex flex-row text-lg font-semibold tracking-tighter">
+            <li class="mr-7 cursor-pointer">
+              <a href="/translation.html">웹사이트 번역</a>
+            </li>
+            <li class="mr-7 cursor-pointer relative">
+              <span
+                class="absolute bottom-6 left-14 text-xs text-white italic bg-slate-300 bg-auto rounded-3xl px-1.5 select-none"
+                >Beta</span
+              >
+              <span class="text-green-500">문서 번역</span>
+            </li>
+            <li class="mr-5 cursor-pointer">
+              <span>GYM</span>
+            </li>
+            <li class="flex justify-center items-center">
+              <span
+                class="border border-l-black h-5 block mr-4 opacity-20"
+              ></span>
+            </li>
+            <li class="mr-7 cursor-pointer"><span>사전</span></li>
+          </ul>
+        </div>
+        <ul class="flex flex-row justify-end container items-center w-1/3">
+          <li class="mr-6 text-sm border border-gray-300 py-0.5 px-1">
+            <button>로그인</button>
           </li>
-          <li class="mr-7 cursor-pointer relative text-green-500">
-            <span
-              class="absolute bottom-6 left-14 text-xs text-white italic bg-slate-300 bg-auto rounded-3xl px-1.5 select-none"
-              >Beta</span
-            >
-            <a href="/document.html">문서 번역</a>
+          <li class="text-2xl mr-6 opacity-50 hover:opacity-70 cursor-pointer">
+            <i class="fas fa-th"></i>
           </li>
-          <li class="mr-5 cursor-pointer">
-            <span>GYM</span>
-          </li>
-          <li class="flex justify-center items-center">
-            <span
-              class="border border-l-black h-5 block mr-4 opacity-20"
-            ></span>
-          </li>
-          <li class="mr-7 cursor-pointer"><span>사전</span></li>
         </ul>
       </div>
       <!---->
@@ -49,7 +58,7 @@
         id="document-header"
         class="flex flex-row items-center w-full justify-center"
       >
-        <div class="flex flex-row items-center justify-between w-5/12">
+        <div class="flex flex-row items-center justify-between w-5/12 mb-5">
           <div
             class="flex flex-row items-center cursor-pointer hover:text-green-400"
           >
@@ -73,6 +82,54 @@
               ><i class="fas fa-chevron-down"></i
             ></span>
           </div>
+        </div>
+      </div>
+      <!---->
+      <div id="document-main" class="w-full px-10 flex flex-col justify-center">
+        <div
+          class="flex flex-col justify-center items-center px-40 pt-10 pb-20 cursor-pointer select-none"
+        >
+          <span class="text-2xl opacity-80 mb-1.5"
+            ><i class="far fa-plus-square"></i
+          ></span>
+          <div
+            class="flex flex-row items-center text-lg font-bold tracking-tighter mb-1"
+          >
+            <span class="text-green-500">내 PC에서 첨부</span
+            ><span>하거나 문서를 드래그하여 넣어주세요.</span>
+          </div>
+          <span class="opacity-50 font-bold tracking-tighter"
+            >docx, xlsx, pptx, hwp 문서를 번역합니다.</span
+          >
+          <span class="opacity-50 font-bold tracking-tighter"
+            >용량 10MB 이하, 글자수 1만자 이하인 문서를 번역합니다.</span
+          >
+        </div>
+        <div
+          class="flex flex-row items-center justify-center mt-8 tracking-tighter"
+        >
+          <span class="opacity-60 font-bold mr-1.5"
+            >파파고 문서번역은 월 10개 문서까지 번역 제공하며, 매월 1일
+            재설정됩니다. (KST 기준) </span
+          ><span
+            class="font-bold decoration-solid underline opacity-80 cursor-pointer"
+            >자세히 보기</span
+          >
+        </div>
+      </div>
+      <!---->
+      <div
+        id="document-footer"
+        class="mt-20 flex flex-col justify-center tracking-tighter"
+      >
+        <div class="flex flex-row justify-start items-center mb-40 mx-14">
+          <span class="text-lg font-bold mr-1.5">번역기록</span>
+          <span class="text-sm opacity-50 font-bold"
+            >번역 문서는 7일간, 총 5회 다운로드 가능합니다.</span
+          >
+        </div>
+        <div class="flex justify-center mb-40 text-lg opacity-50 font-bold">
+          번역기록이 없습니다.
         </div>
       </div>
     </div>
